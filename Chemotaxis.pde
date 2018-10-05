@@ -28,21 +28,8 @@ class Bacteria
  	}
  	void move()
  	{
- 		if (myX > 550 || myY > 550)
- 		{
- 			myX = myX + ((int)(Math.random() * 3)-10);
- 			myY = myY + ((int)(Math.random() * 3)-10);
- 		}
- 		else if (myX < 450 || myY < 450)
- 		{
- 			myX = myX + ((int)(Math.random() * 8)-1);
- 			myY = myY + ((int)(Math.random() * 8)-1);
- 		}
- 		else
- 		{
- 			myX = myX + ((int)(Math.random() * 3)-1);
- 			myY = myY + ((int)(Math.random() * 3)-1);
- 		}		
+ 		myX = myX + ((int)(Math.random() * 9)-4);
+ 		myY = myY + ((int)(Math.random() * 9)-4);	
  	} 
  	void show()
  	{
@@ -51,27 +38,3 @@ class Bacteria
  		ellipse(myX,myY,5,5);
  	}
 }
-/*
-Prototype for Pepe the Frog
-void draw()
-{
-  fill(0,170,0);
-  ellipse(250,250,100,100);
-  ellipse(280,200,50,50);
-  ellipse(230,200,50,50);
-  noStroke();
-  fill(255);
-  ellipse(240,200,40,20);
-  ellipse(290,200,40,20);
-  fill(0);
-  ellipse(290,200,18,18);
-  ellipse(240,200,18,18);
-  fill(255);
-  ellipse(288,193,3,3);
-  ellipse(238,193,3,3);
-  ellipse(294,198,5,5);
-  ellipse(244,198,5,5);
-  ellipse(288,203,2,2);
-  ellipse(238,203,2,2);
-}
-*/ 
